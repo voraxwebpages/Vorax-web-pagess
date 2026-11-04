@@ -1,0 +1,463 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VORAX WEB PAGES</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #080808;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #c9a227;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #d4af37;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #111, #252525);
+        }
+
+        .inicio h1 {
+            font-size: 55px;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 30px;
+            background: #d4af37;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        .fundadores {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .persona {
+            background: #202020;
+            padding: 30px;
+            width: 250px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        .persona h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            background: #202020;
+            width: 270px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #444;
+            padding-bottom: 20px;
+        }
+
+        .producto img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .producto h3 {
+            color: #d4af37;
+            margin: 15px;
+        }
+
+        .producto p {
+            padding: 0 15px;
+        }
+
+        .precio {
+            display: block;
+            color: #d4af37;
+            font-size: 22px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .pagos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .pago {
+            background: #202020;
+            padding: 20px 35px;
+            border-radius: 8px;
+            border: 1px solid #555;
+            color: white;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 450px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #d4af37;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #f1d36b;
+        }
+
+        footer {
+            background: #080808;
+            padding: 25px;
+            text-align: center;
+            color: #888;
+            border-top: 1px solid #d4af37;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="logo">
+            VORAX WEB PAGES
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#pagos">Pagos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+
+    <div class="inicio" id="inicio">
+
+        <h1>VORAX</h1>
+
+        <p>Diseñamos el futuro de tu presencia digital.</p>
+
+        <a href="#servicios" class="boton">
+            Conoce nuestros servicios
+        </a>
+
+    </div>
+
+
+    <!-- QUIENES SOMOS -->
+
+    <section id="nosotros">
+
+        <h2>¿Quiénes somos?</h2>
+
+        <p>
+            Somos VORAX WEB PAGES, una empresa dedicada al diseño,
+            desarrollo y creación de páginas web. Nuestro objetivo
+            es ayudar a negocios y emprendedores a tener presencia
+            en internet mediante soluciones digitales modernas,
+            funcionales y profesionales.
+        </p>
+
+    </section>
+
+
+    <!-- FUNDADORES -->
+
+    <section>
+
+        <h2>Nuestros fundadores</h2>
+
+        <div class="fundadores">
+
+            <div class="persona">
+
+                <h3>Ricardo Mora Rosas</h3>
+
+                <p>Fundador y desarrollador web.</p>
+
+            </div>
+
+            <div class="persona">
+
+                <h3>Nazaret López</h3>
+
+                <p>Fundadora y colaboradora de proyectos digitales.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTOS Y SERVICIOS -->
+
+    <section id="servicios">
+
+        <h2>Nuestros servicios</h2>
+
+        <div class="productos">
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600"
+                alt="Diseño de página web">
+
+                <h3>Página web básica</h3>
+
+                <p>
+                    Diseño de una página web sencilla
+                    para presentar tu negocio.
+                </p>
+
+                <span class="precio">$1,500 MXN</span>
+
+            </div>
+
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=600"
+                alt="Diseño web profesional">
+
+                <h3>Página web profesional</h3>
+
+                <p>
+                    Sitio web con diferentes secciones,
+                    diseño personalizado y navegación.
+                </p>
+
+                <span class="precio">$3,500 MXN</span>
+
+            </div>
+
+
+            <div class="producto">
+
+                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600"
+                alt="Tienda en línea">
+
+                <h3>Tienda en línea</h3>
+
+                <p>
+                    Plataforma digital para mostrar
+                    productos y facilitar las ventas.
+                </p>
+
+                <span class="precio">$5,000 MXN</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMAS DE PAGO -->
+
+    <section id="pagos">
+
+        <h2>Formas de pago</h2>
+
+        <p>Aceptamos los siguientes métodos de pago:</p>
+
+        <br>
+
+        <div class="pagos">
+
+            <div class="pago">VISA</div>
+
+            <div class="pago">PAYPAL</div>
+
+            <div class="pago">OXXO</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO POR WHATSAPP -->
+
+    <section id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <p>
+            ¿Tienes un proyecto en mente?
+            Envíanos un mensaje por WhatsApp.
+        </p>
+
+        <br>
+
+        <form onsubmit="enviarWhatsApp(event)">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Tu nombre"
+                required
+            >
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Tu correo electrónico"
+                required
+            >
+
+            <textarea
+                id="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar mensaje por WhatsApp
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- PIE DE PAGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 VORAX WEB PAGES | Todos los derechos reservados.
+        </p>
+
+        <p>Diseñando el futuro digital.</p>
+
+    </footer>
+
+
+    <!-- FUNCION DE WHATSAPP -->
+
+    <script>
+
+        function enviarWhatsApp(event) {
+
+            event.preventDefault();
+
+            let nombre = document.getElementById("nombre").value;
+
+            let correo = document.getElementById("correo").value;
+
+            let mensaje = document.getElementById("mensaje").value;
+
+            let telefono = "525529946456";
+
+            let texto = "Hola, soy " + nombre +
+                        ". Mi correo es: " + correo +
+                        ". Mi mensaje es: " + mensaje;
+
+            let url = "https://wa.me/" + telefono +
+                      "?text=" + encodeURIComponent(texto);
+
+            window.open(url, "_blank");
+
+        }
+
+    </script>
+
+</body>
+</html>
